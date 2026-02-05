@@ -1,7 +1,7 @@
 export default async function Home() {
   const response = await fetch("http://localhost:8000/todos");
   const data = await response.json();
-  console.log(data);
+
   return (
     <div>
       <h1>My To-Do List</h1>
